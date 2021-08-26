@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs": "./node_modules/jsdoc/jsdoc.js -c ./.jsdoc.conf.json"
+    "docs": "docgen --source src --custom docs/index.yml --output docs/docs.json"
   },
   "repository": {
     "type": "github",
@@ -33,6 +33,7 @@
     "npm": ">= 6.9.0"
   },
   "dependencies": {
+    "@discordjs/docgen": "^0.10.0",
     "jsdoc": "^3.6.7",
     "node-fetch": "^2.6.1"
   }
